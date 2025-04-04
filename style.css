@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav {
+  background-color: #1b0527;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_name {
+  color: white;
+  font-size: 1.5em;
+}
+
+.topdiv {
+  display: flex;
+  gap: 1em;
+}
+
+.topmenu, #theme-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* About Me Section */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.profile_image {
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.cv-button {
+  display: block;
+  margin-top: 1em;
+  padding: 10px;
+  background: #11021a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Skills */
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.skill {
+  position: relative;
+  width: 120px;
+  text-align: center;
+}
+
+.skill img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.skill-overlay {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Education */
+.education-card {
+  background: #257ab3;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #222;
+  color: white;
+}
+
+.dark-mode nav {
+  background: #444;
+}
+
+.dark-mode .cv-button {
+  background: #555;
+}

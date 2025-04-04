@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nomsa Mwansa Ngoma - Portfolio</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Nomsa Mwansa Ngoma
+        <div class="contact_info">
+          <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+          mwansa.n.ngoma@outlook.com
+        </div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+          +260972408520
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#education">Education</a>
+        <a class="topmenu" href="#contact">Contact</a>
+        <button id="theme-toggle">🌙</button> <!-- Dark Mode Toggle -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="container">
+    <div class="profile-container">
+      <img src="html_finalprojimages/Photo.png" class="profile_image" alt="Profile Image"/>
+      <a href="Nomsa_CV.pdf" download class="cv-button">Download CV</a>
+    </div>
+    <div class="about-text">
+      <h1>Hi, I'm Nomsa Mwansa Ngoma <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving Hand"/></h1>
+      <p>
+        I am a student engineer, data analyst, and AI enthusiast with a growing interest in full-stack web development. 
+        I have a passion for solving problems using technology and have been involved in various projects that leverage tech and data for innovative solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png" alt="HTML Icon"/>
+        <div class="skill-overlay">1 years experience</div>
+      </div>  
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg" alt="JavaScript Icon"/>
+        <div class="skill-overlay">1 years experience</div>
+      </div>  
+      <div class="skill">
+        <img src="html_finalprojimages/sql.png" alt="SQL Icon"/>
+        <div class="skill-overlay">4 months experience</div>
+      </div>  
+      <div class="skill">
+        <img src="html_finalprojimages/css3.png" alt="CSS Icon"/>
+        <div class="skill-overlay">1 year experience</div>
+      </div>  
+      <div class="skill">
+        <img src="html_finalprojimages/python.png" alt="Python Icon"/>
+        <div class="skill-overlay">6 months experience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-card">
+      <h3>Bachelor of Science in Engineering</h3>
+      <p>IU International University of Applied Sciences.</p>
+    </div>
+    <div class="education-card">
+      <h3>Udacity AI Programming with Python Nanodegree</h3>
+      <p>Studying AI, Machine Learning, and Python for real-world applications.</p>
+    </div>
+    <div class="education-card">
+      <h3>CS50 Introduction to Computer science</h3>
+      <p>Harvard's course on fundamental programming concepts and problem-solving.</p>
+    </div>
+    <div class="education-card">
+      <h3>Tech4Dev Frontend Bootcamp</h3>
+      <p>Hands-on training in HTML, CSS, JavaScript, and UI/UX design.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <fieldset>
+      <legend>Leave a Message</legend>
+      <input type="text" placeholder="Name (Optional)">
+      <input type="email" placeholder="Email (Optional)">
+      <textarea placeholder="Message"></textarea>
+      <button onclick="submitMessage()">Submit</button>
+    </fieldset>
+  </section>
+
+  <!-- Dark Mode Script -->
+  <script src="script.js"></script>
+</body>
+</html>
