@@ -1,11 +1,11 @@
 # Portfolio
 # Nomsa Ngoma - Personal Portfolio Website 🌐
 
-Welcome to my personal portfolio website! This site is a reflection of my journey in engineering, artificial intelligence, data analysis, and front-end web development. It showcases my projects, skills, education, and contact information—all in a visually clean and accessible format.
+Welcome to my personal portfolio website! This site is a reflection of my journey in engineering, data analysis, and full stack web development. It showcases my projects, skills, education, and contact information—all in a visually clean and accessible format.
 
 ## 🧠 About Me
 
-I'm an aspiring aeronautical engineer, AI enthusiast, project manager, data analyst, front-end developer, and UI/UX designer. This portfolio is designed to highlight my multidimensional skill set and passion for solving real-world problems through technology.
+I'm a student engineer, AI enthusiast, data analyst and full stack developer. This portfolio is designed to highlight my multidimensional skill set and passion for solving real-world problems through technology.
 
 ## ✨ Features
 
