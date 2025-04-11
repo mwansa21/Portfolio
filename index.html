@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nomsa Mwansa Ngoma - Portfolio</title>
-  <link rel="stylesheet" href="./style.css"/>
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Theme toggle inside body using :has() -->
+  <div class="theme-toggle-wrapper">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" />
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-text">Toggle Dark Mode</span>
+  </div>
+
+  <!-- Navigation -->
   <nav>
     <div id="home">
       <div class="profile_name">
         Nomsa Mwansa Ngoma
         <div class="contact_info">
-          <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+          <img src="html_finalprojimages/envelope.png" alt="Email Icon" />
           mwansa.n.ngoma@outlook.com
         </div>
         <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+          <img src="html_finalprojimages/phone.png" alt="Phone Icon" />
           +260972408520
         </div>
       </div>
@@ -25,87 +36,71 @@
         <a class="topmenu" href="#about-me">About Me</a>
         <a class="topmenu" href="#skills">Skills</a>
         <a class="topmenu" href="#education">Education</a>
+        <a class="topmenu" href="#projects">Projects</a>
         <a class="topmenu" href="#contact">Contact</a>
-        <button id="theme-toggle">🌙</button> <!-- Dark Mode Toggle -->
       </div>
     </div>
   </nav>
 
-  <!-- About Me Section -->
+  <!-- About Me -->
   <section id="about-me" class="container">
     <div class="profile-container">
-      <img src="html_finalprojimages/Photo.png" class="profile_image" alt="Profile Image"/>
+      <img src="html_finalprojimages/Photo.png" class="profile_image" alt="Profile Image" />
       <a href="Nomsa_CV.pdf" download class="cv-button">Download CV</a>
     </div>
     <div class="about-text">
-      <h1>Hi, I'm Nomsa Mwansa Ngoma <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving Hand"/></h1>
+      <h1>Hi, I'm Nomsa Mwansa Ngoma <img src="html_finalprojimages/waving-hand.png" width="60px"/></h1>
       <p>
-        I am a student engineer, data analyst, and AI enthusiast with a growing interest in full-stack web development. 
-        I have a passion for solving problems using technology and have been involved in various projects that leverage tech and data for innovative solutions.
+        I am a student engineer, data analyst, and AI enthusiast with a growing interest in full-stack web development. I enjoy solving problems with technology and have worked on projects using AI, data, and web tools.
       </p>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="all_skills">
-      <div class="skill">
-        <img src="html_finalprojimages/html5.png" alt="HTML Icon"/>
-        <div class="skill-overlay">1 years experience</div>
-      </div>  
-      <div class="skill">
-        <img src="html_finalprojimages/js.jpeg" alt="JavaScript Icon"/>
-        <div class="skill-overlay">1 years experience</div>
-      </div>  
-      <div class="skill">
-        <img src="html_finalprojimages/sql.png" alt="SQL Icon"/>
-        <div class="skill-overlay">4 months experience</div>
-      </div>  
-      <div class="skill">
-        <img src="html_finalprojimages/css3.png" alt="CSS Icon"/>
-        <div class="skill-overlay">1 year experience</div>
-      </div>  
-      <div class="skill">
-        <img src="html_finalprojimages/python.png" alt="Python Icon"/>
-        <div class="skill-overlay">6 months experience</div>
-      </div>
+      <div class="skill"><img src="html_finalprojimages/html5.png" alt="HTML"/><div class="skill-overlay">1 year</div></div>
+      <div class="skill"><img src="html_finalprojimages/js.jpeg" alt="JS"/><div class="skill-overlay">1 year</div></div>
+      <div class="skill"><img src="html_finalprojimages/sql.png" alt="SQL"/><div class="skill-overlay">4 months</div></div>
+      <div class="skill"><img src="html_finalprojimages/css3.png" alt="CSS"/><div class="skill-overlay">1 year</div></div>
+      <div class="skill"><img src="html_finalprojimages/python.png" alt="Python"/><div class="skill-overlay">6 months</div></div>
     </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education">
     <h2>Education</h2>
-    <div class="education-card">
-      <h3>Bachelor of Science in Engineering</h3>
-      <p>IU International University of Applied Sciences.</p>
-    </div>
-    <div class="education-card">
-      <h3>Udacity AI Programming with Python Nanodegree</h3>
-      <p>Studying AI, Machine Learning, and Python for real-world applications.</p>
-    </div>
-    <div class="education-card">
-      <h3>CS50 Introduction to Computer science</h3>
-      <p>Harvard's course on fundamental programming concepts and problem-solving.</p>
-    </div>
-    <div class="education-card">
-      <h3>Tech4Dev Frontend Bootcamp</h3>
-      <p>Hands-on training in HTML, CSS, JavaScript, and UI/UX design.</p>
-    </div>
+    <ul class="education-list">
+      <li><strong>B.Sc. in Engineering:</strong> IU International University of Applied Sciences</li>
+      <li><strong>Udacity AI Programming with Python Nanodegree</strong></li>
+      <li><strong>CS50 Intro to Computer Science</strong> - Harvard</li>
+      <li><strong>Tech4Dev Frontend Bootcamp</strong></li>
+      <li><strong>Google Data Analytics Professional Certificate</strong> - August 2024</li>
+      <li><strong>Data Analysis Certificate</strong> - Africa Agility, January 2025</li>
+    </ul>
   </section>
 
-  <!-- Contact Form -->
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects I Have Done</h2>
+    <ul class="project-list">
+      <li>Use a Pre-trained Image Classifier to Identify Dog Breeds</li>
+      <li>Create Your Own Image Classifier</li>
+      <li>Analysing Students’ Medical Health</li>
+      <li>Data Literacy Case Study: Remote Working Analysis</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
   <section id="contact">
     <fieldset>
       <legend>Leave a Message</legend>
       <input type="text" placeholder="Name (Optional)">
       <input type="email" placeholder="Email (Optional)">
       <textarea placeholder="Message"></textarea>
-      <button onclick="submitMessage()">Submit</button>
+      <button>Submit</button>
     </fieldset>
   </section>
-
-  <!-- Dark Mode Script -->
-  <script src="script.js"></script>
 </body>
 </html>
